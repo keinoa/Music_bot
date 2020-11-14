@@ -1,11 +1,13 @@
 import discord
-from discord.shard import EventItem
-From discord.ext import commands
+from discord.ext import commands
 
-bot = commands.Bot(commands_prefix='!')
+bot = commands.Bot(command_prefix='!')
 
 @bot.event
-async def on_ready()
+
+#async為協成函式,重新定義功能時使用
+async def on_ready():
     print(">> Bot is online <<")
 
-bot run("NDU5Njc5NjI3Njk5NDIxMTg0.WyzcAw.iR01e4Yjd-yXv2EXQaEjILD8rgs")
+#token可能會報錯
+bot.run('NDU5Njc5NjI3Njk5NDIxMTg0.WyzcAw.TTGNWK8qtQ23bVYu10kS37WO9B8')
